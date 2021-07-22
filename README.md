@@ -1,2 +1,2 @@
-# maven
-vše o maven nástroji, co mi přijde užitečné
+# Maven
+O všem možném, co lze s Maven-em provádět v rámci vývoje. 
