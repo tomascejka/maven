@@ -16,4 +16,5 @@ Lokální studijní zdroje - většinou github projekty.
 * [Maven - hlavní stránka](https://github.com/tomascejka/java/tree/main/maven)
 
 ## Zdroje
+Externí studijní zdroje - většinou blogy, články, studie nebo zprávy ze serverů se stejnou tématikou
 * [Introduction to Archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
