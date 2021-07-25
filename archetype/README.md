@@ -12,4 +12,5 @@ Archetypy zde presentované budou zkompilovatelné a spustitelné - tzn. použit
 
 
 ## Další
+Lokální studijní zdroje - většinou github projekty.
 * [Maven - hlavní stránka](https://github.com/tomascejka/java/tree/main/maven)
