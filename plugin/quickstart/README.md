@@ -4,7 +4,7 @@ Plugin je vlastnost [maven-u](https://maven.apache.org/index.html), díky níž 
 Postup zde uvedený "zaobalým" do batch skriptů a to pouze pro ulehčení práce. Doporučuji však nahlédnout do skriptů (spouštějí pouze ```mvn``` příkaz s různými skladbami parametrů).
 
 ## Vytvoření pluginu
-Vytvořte si adresář, do něj nakopírujte ```create-plugin.bat```. Spusťte skript bez parametrů a budete dotázán na dva parametry:```groupId``` a ```artifactId```. To je v pořádku (to jsou základní atributy [maven projektu](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
+Vytvořte si adresář, do něj nakopírujte ```create-plugin.bat```. Spusťte skript bez parametrů a budete dotázán na dva parametry:```groupId``` a ```artifactId``` (základní atributy [maven projektu](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
 
 ```
 create-plugin.bat
