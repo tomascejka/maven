@@ -51,4 +51,7 @@ mvn groupId:artifactId:version:goal
 * [Maven Archetype](https://github.com/tomascejka/java/tree/main/maven/archetype)
 
 ## Zdroje
-TBD
+* [Tutorial Build a Maven Plugin](https://developer.okta.com/blog/2019/09/23/tutorial-build-a-maven-plugin)
+* [Maven plugin](https://www.baeldung.com/maven-plugin)
+* [How to write Own Maven Plugin](https://blogs.oracle.com/javamagazine/how-to-write-your-own-maven-plugins)
+* [Writing custom Maven Plugin](https://books.sonatype.com/mvnref-book/reference/writing-plugins-sect-custom-plugin.html)
