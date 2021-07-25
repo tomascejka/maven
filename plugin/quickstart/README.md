@@ -39,10 +39,10 @@ Lze použít jednoduchý příkaz, kterým si plugin (resp. jeho "mojo" příkaz
 use-plugin.bat
 ```
 
-Ve finále to zkouší spustit takovýto příkaz (abstraktně):
+Ve finále to zkouší spustit takovýto příkaz (abstraktně, [zdroj](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html#executing-your-first-mojo)):
 
 ```shell
-mvn groupId:artifactId:@Mojo(name)
+mvn groupId:artifactId:version:goal
 ```
 
 
