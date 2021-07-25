@@ -17,7 +17,7 @@ create-plugin.bat your-artifactId your-groupId
 
 
 ### Doplnění aktuálních versí
-Základní archetypy [maven](https://maven.org) pro pluginy nejsou aktualizovány a je nutné si verse (pluginů, závislostí) v nich uvedené povýšit sám - pomocí tohoto skriptu, kterému je nutné předat cestu k archetypu. Doporučuji si obsah skriptu ```modify-pom.bat``` projít a případné verse (pluginů, závislostí) doplnit/změnit sám (jsou jenom dvě verse JDK a archetype pluginu).
+Základní archetypy [maven](https://maven.org) pro pluginy nejsou aktualizovány a je nutné si verse (pluginů, závislostí) v nich uvedené povýšit sám - pomocí tohoto skriptu, kterému je nutné předat cestu k archetypu. Doporučuji si obsah skriptu ```modify-pom.bat``` projít a případné verse (pluginů, závislostí) doplnit/změnit sám.
 
 ```
 modify-pom.bat your-artifactId
