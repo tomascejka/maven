@@ -1,7 +1,7 @@
 # Maven Archetype - rozcestník
 
 ## Úvod
-Vnímám jako užitečnou vlastnost/umění - neopakovat se (tzn. nepřidělávat si, ale zjednodušovat si práci). A [maven archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) toto umožnuje - vytvořením prototypových šablon, z kterých vygeneruje funkční projekty - úžasné.
+[Maven archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) umožnuje vytvoření prototypových šablon, z kterých vygeneruje funkční projekty - úžasné.
 
 * [Základy archetypů](./STUDY.md)
 * [Použití archetypů](./quickstart)
