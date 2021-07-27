@@ -20,7 +20,7 @@ create-plugin.bat your-artifactId your-groupId
 Základní archetypy [maven](https://maven.org) pro pluginy nejsou aktualizovány a je nutné si verse (pluginů, závislostí) v nich uvedené povýšit sám - pomocí tohoto skriptu, kterému je nutné předat cestu k archetypu. Doporučuji si obsah skriptu ```modify-pom.bat``` projít a případné verse (pluginů, závislostí) doplnit/změnit sám.
 
 ```
-modify-pom.bat your-artifactId
+modify-pom.bat your-artifactId your-groupId
 ``` 
 
 ## Instalace pluginu
@@ -36,7 +36,7 @@ Lze použít jednoduchý příkaz, kterým si plugin (resp. jeho "mojo" příkaz
 
 
 ```shell
-use-plugin.bat
+use-plugin.bat your-artifactId your-groupId
 ```
 
 Ve finále to zkouší spustit takovýto příkaz (abstraktně, [zdroj](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html#executing-your-first-mojo)):
