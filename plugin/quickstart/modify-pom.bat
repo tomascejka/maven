@@ -39,6 +39,7 @@ echo    ^<maven.compiler.source^>%JDK_VERSION%^</maven.compiler.source^>
 echo    ^<maven.compiler.target^>%JDK_VERSION%^</maven.compiler.target^>
 echo    ^<project.build.sourceEncoding^>UTF-8^</project.build.sourceEncoding^>
 echo    ^<project.reporting.outputEncoding^>UTF-8^</project.reporting.outputEncoding^>
+echo    ^<maven.version^>3.8.1^</maven.version^>
 echo  ^</properties^>
 echo.
 echo  ^<dependencies^>
@@ -46,14 +47,14 @@ echo    ^<^!-- plugin interfaces and base classes --^>
 echo    ^<dependency^>
 echo      ^<groupId^>org.apache.maven^</groupId^>
 echo      ^<artifactId^>maven-plugin-api^</artifactId^>
-echo      ^<version^>3.8.1^</version^>
+echo      ^<version^>^$^{maven.version^}^</version^>
 echo      ^<scope^>provided^</scope^>
 echo    ^</dependency^>
 echo    ^<^!-- needed when injecting the Maven Project into a plugin --^>
 echo    ^<dependency^>
 echo      ^<groupId^>org.apache.maven^</groupId^>
 echo      ^<artifactId^>maven-core^</artifactId^>
-echo      ^<version^>3.8.1^</version^>
+echo      ^<version^>^$^{maven.version^}^</version^>
 echo      ^<scope^>provided^</scope^>
 echo    ^</dependency^>
 echo    ^<^!-- annotations used to describe the plugin meta-data --^>
@@ -68,6 +69,12 @@ echo    ^<dependency^>
 echo      ^<groupId^>junit^</groupId^>
 echo      ^<artifactId^>junit^</artifactId^>
 echo      ^<version^>4.13.2^</version^>
+echo      ^<scope^>test^</scope^>
+echo    ^</dependency^>
+echo    ^<dependency^>
+echo      ^<groupId^>org.apache.maven^</groupId^>
+echo      ^<artifactId^>maven-compat^</artifactId^>
+echo      ^<version^>^$^{maven.version^}^</version^>
 echo      ^<scope^>test^</scope^>
 echo    ^</dependency^>
 echo    ^<dependency^>
