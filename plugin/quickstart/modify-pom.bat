@@ -9,6 +9,9 @@ REM
 REM @see https://developer.okta.com/blog/2019/09/23/tutorial-build-a-maven-plugin#add-maven-dependencies
 REM
 
+ECHO ----------------------------------------------------------------------------------------------------
+ECHO  MODIFY pom.xml
+ECHO ----------------------------------------------------------------------------------------------------
 SET artifactID=%1
 SET groupID=%2
 IF [%1]==[] SET /P artifactID= Set artifactID value:
@@ -60,7 +63,7 @@ echo      ^<artifactId^>maven-plugin-annotations^</artifactId^>
 echo      ^<version^>3.6.1^</version^>
 echo      ^<scope^>provided^</scope^>
 echo    ^</dependency^>
-echo    ^<^!-- testing -- ^>
+echo    ^<^!-- testing --^>
 echo    ^<dependency^>
 echo      ^<groupId^>junit^</groupId^>
 echo      ^<artifactId^>junit^</artifactId^>
