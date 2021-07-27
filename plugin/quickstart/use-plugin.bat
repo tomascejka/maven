@@ -9,8 +9,8 @@ REM
 SET artifactID=%1
 SET groupID=%2
 SET version=1.0.0-SNAPSHOT
-SET /P groupID=Set groupId value: 
-SET /P artifactID=Set artifactID value: 
+IF[%1]==[] SET /P artifactID=Set artifactID value: 
+IF[%2]==[] SET /P groupID=Set groupId value: 
 SET /P mojo=Set mojo name: 
 
 ECHO ------------------------------------------------------

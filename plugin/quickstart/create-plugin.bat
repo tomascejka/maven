@@ -13,21 +13,20 @@ REM @see https://ss64.com/nt/if.html
 REM
 
 :CHOOSE_ARTIFACT_ID
-ECHO ----------------------------------------------------------------------------------------------------
+ECHO -------------------------------------
 ECHO  SELECT maven-archetype-artifact
-ECHO ----------------------------------------------------------------------------------------------------
+ECHO -------------------------------------
 ECHO.
 ECHO  Achetype ID values:
 ECHO.
 ECHO  [1] maven-archetype-plugin, 
-ECHO        see https://maven.apache.org/archetypes/maven-archetype-plugin/
+REM        see https://maven.apache.org/archetypes/maven-archetype-plugin/
 ECHO  [2] maven-archetype-mojo, 
-ECHO        see https://maven.apache.org/plugins-archives/maven-archetype-plugin-1.0-alpha-7/examples/mojo.html
+REM        see https://maven.apache.org/plugins-archives/maven-archetype-plugin-1.0-alpha-7/examples/mojo.html
 ECHO.
-ECHO  Next info, see:
-ECHO    - https://maven.apache.org/guides/introduction/introduction-to-archetypes.html#provided-archetypes
-ECHO.
-ECHO -----------------------------------------------------------------------------------------------------
+REM  Next info, see:
+REM    - https://maven.apache.org/guides/introduction/introduction-to-archetypes.html#provided-archetypes
+ECHO -------------------------------------
 SET /P choise=which archetype: 
 SET case=CASE_%choise%
 GOTO CASE_%choise%
@@ -51,9 +50,9 @@ IF [%2]==[] SET /P groupID= Set groupId value:
 SET version=1.0.0-SNAPSHOT
 SET package=%groupID%.%artifactID%
 
-ECHO ------------------------------------------------------
+ECHO -------------------------------------
 ECHO  CREATE plugin
-ECHO ------------------------------------------------------
+ECHO -------------------------------------
 ECHO.
 ECHO  Selected attributes:
 ECHO.
@@ -61,7 +60,7 @@ ECHO   groupId:%groupID%
 ECHO   artifactId:%artifactID%
 ECHO   version:%version%
 ECHO.
-ECHO ------------------------------------------------------
+ECHO -------------------------------------
 mvn archetype:generate -B -DgroupId=%groupID% -DartifactId=%artifactID% -Dversion=%version% -Dpackage=%package% ^
   -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-plugin
 
