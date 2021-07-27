@@ -13,3 +13,4 @@ Archetypy zde presentované budou zkompilovatelné a spustitelné - tzn. použit
 ## Zdroje
 * [Maven - hlavní stránka](https://github.com/tomascejka/java/tree/main/maven)
 * [Introduction to Archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
+* [Sources of bundled archetypes](https://github.com/apache/maven-archetypes/)
