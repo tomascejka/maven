@@ -52,5 +52,5 @@ V tuto chvíli umíte pracovat s [maven archetype](https://maven.apache.org/guid
 2. [Bundled Maven archetypes](https://maven.apache.org/archetypes/index.html)
 3. [Archetype maven plugin](https://maven.apache.org/archetype/maven-archetype-plugin/usage.html)
 4. [Guide to create archetype](https://maven.apache.org/guides/mini/guide-creating-archetypes.html)
-4.1 [Create archetype with property file](https://maven.apache.org/archetype/maven-archetype-plugin/examples/create-with-property-file.html)
-4.2 [Create archetype from existing project](https://maven.apache.org/archetype/maven-archetype-plugin/examples/create-multi-module-project.html)
+5. [Create archetype with property file](https://maven.apache.org/archetype/maven-archetype-plugin/examples/create-with-property-file.html)
+6. [Create archetype from existing project](https://maven.apache.org/archetype/maven-archetype-plugin/examples/create-multi-module-project.html)
