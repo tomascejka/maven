@@ -1,12 +1,13 @@
-REM @echo off
+@echo off
 
 REM
 REM Přepíše obsahy pom.xml souborů v archetypu a samotné šabloně
 REM
 
 SET JDK_VERSION=11
+SET ARCHETYPE_VERSION=3.2.0
 SET LOCATION_ARCHETYPE=%1
-SET LOCATION_TEMPLATE=%LOCATION_ARCHETYPE%/src/main/resources/archetype-resources
+SET LOCATION_TEMPLATE=%LOCATION_ARCHETYPE%\src\main\resources\archetype-resources
 
 (echo ^<?xml version="1.0" encoding="UTF-8"?^>
 echo.
@@ -26,7 +27,6 @@ echo    ^<maven.compiler.source^>%JDK_VERSION%^</maven.compiler.source^>
 echo    ^<maven.compiler.target^>%JDK_VERSION%^</maven.compiler.target^>
 echo    ^<project.build.sourceEncoding^>UTF-8^</project.build.sourceEncoding^>
 echo    ^<project.reporting.outputEncoding^>UTF-8^</project.reporting.outputEncoding^>
-echo    ^<archetype-packaging.version>3.2.0^</archetype-packaging.version^>
 echo  ^</properties^>
 echo.
 echo  ^<build^>
@@ -34,7 +34,7 @@ echo    ^<extensions^>
 echo      ^<extension^>
 echo        ^<groupId^>org.apache.maven.archetype^</groupId^>
 echo        ^<artifactId^>archetype-packaging^</artifactId^>
-echo        ^<version^>^$^{archetype-packaging.version^}^</version^>
+echo        ^<version^>%ARCHETYPE_VERSION%^</version^>
 echo      ^</extension^>
 echo    ^</extensions^>
 echo  ^</build^>
@@ -63,7 +63,7 @@ echo  ^<dependencies^>
 echo     ^<dependency^>
 echo       ^<groupId^>org.junit.jupiter^</groupId^>
 echo       ^<artifactId^>junit-jupiter^</artifactId^>
-echo       ^<version^>^$^{junit-jupiter.version^}^</version^>
+echo       ^<version^>5.9.3^</version^>
 echo       ^<scope^>test^</scope^>
 echo     ^</dependency^>
 echo  ^</dependencies^>

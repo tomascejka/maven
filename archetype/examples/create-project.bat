@@ -12,12 +12,13 @@ IF [%1]==[] SET /P artifactID= Set artifactID value:
 IF [%2]==[] SET /P groupID= Set groupId value:
 
 mkdir %artifactID%
+SET WORKDIR=.
 
 call ..\quickstart\create-archetype.bat %artifactID% %groupID%
-copy ..\quickstart\modify-pom.bat .\%artifactID%
+copy ..\quickstart\modify-pom.bat %WORKDIR%
 
 call .\modify-pom.bat %artifactID% %groupID%
-rm %artifactID%\modify-pom.bat
+rm %WORKDIR%\modify-pom.bat
 
 pause
 :eof
