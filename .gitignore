@@ -24,3 +24,4 @@
 hs_err_pid*
 /plugin/temp/sdxapi-maven-plugin/target/
 /archetype/examples/jakarta8-wildlfy/target
+/maven-wrapper/001_-_maven_wrapper_install/.m2
